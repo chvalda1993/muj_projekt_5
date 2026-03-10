@@ -100,7 +100,7 @@ muj_projekt_5/
     ├── conftest.py
     ├── test_pridat_ukol.py
     ├── test_aktualizovat_ukol.py
-    └── test_odstranit_ukol.py
+    └── test_odstranit_ukol.py```
 
 ---
 
