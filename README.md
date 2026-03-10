@@ -85,17 +85,22 @@ Testy používají samostatnou **testovací databázi**, která je vytvořena au
 ---
 
 ## Struktura projektu
-project/
+```text
+muj_projekt_5/
 │
-├─ task_manager.py # aplikační logika programu
-├─ db.py # databázová vrstva (SQL operace)
-├─ config.py # načítání konfiguračních proměnných
-├─ .env.example # ukázka konfigurace
+├── task_manager.py      # aplikační logika programu
+├── db.py                # databázová vrstva (SQL operace)
+├── config.py            # načítání konfiguračních proměnných
+├── .env.example         # ukázka konfigurace
+├── .gitignore
+├── README.md
 │
-└─ tests/
-├─ init.py
-├─ conftest.py # fixture pro testovací databázi
-└─ test_*.py # testy funkcí
+└── tests/
+    ├── __init__.py
+    ├── conftest.py
+    ├── test_pridat_ukol.py
+    ├── test_aktualizovat_ukol.py
+    └── test_odstranit_ukol.py
 
 ---
 
