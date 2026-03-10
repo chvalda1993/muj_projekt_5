@@ -54,9 +54,10 @@ DB_USER=root
 DB_PASSWORD=
 DB_NAME=task_manager
 TEST_DB_NAME=task_manager_test
+```
 
 Databáze i tabulka se při spuštění programu vytvoří automaticky, pokud ještě neexistují.
-```
+
 ---
 
 ## Spuštění programu
