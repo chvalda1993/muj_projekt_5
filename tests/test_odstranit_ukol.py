@@ -1,4 +1,4 @@
-import task_manager_db as tm
+import task_manager as tm
 
 def test_odstranit_ukol_pozitivni(conn, monkeypatch):
     cursor = conn.cursor()

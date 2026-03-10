@@ -1,4 +1,4 @@
-import task_manager_db as tm
+import task_manager as tm
 
 def test_pridat_ukol_pozitivni(conn, monkeypatch):
     inputs = iter(["nazev_ukolu", "popis_ukolu"])

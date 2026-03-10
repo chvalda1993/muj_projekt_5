@@ -1,6 +1,6 @@
-import task_manager_db as tm
+import task_manager as tm
 
-def test_aktualizovatat_ukol_pozitivni(conn, monkeypatch):
+def test_aktualizovat_ukol_pozitivni(conn, monkeypatch):
     cursor = conn.cursor()
     cursor.execute("INSERT INTO ukoly (nazev, popis, stav) VALUES (%s, %s, %s)", ("nazev_ukolu", "popis_ukolu", "nezahájeno"))
     id_ukolu = cursor.lastrowid
