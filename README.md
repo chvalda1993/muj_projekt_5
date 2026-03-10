@@ -48,6 +48,7 @@ Projekt používá konfigurační soubor `.env` pro uložení přihlašovacích 
 2. Nastavte proměnné podle souboru `.env.example`
 
 Příklad konfigurace:
+```text
 DB_HOST=localhost
 DB_USER=root
 DB_PASSWORD=
@@ -55,7 +56,7 @@ DB_NAME=task_manager
 TEST_DB_NAME=task_manager_test
 
 Databáze i tabulka se při spuštění programu vytvoří automaticky, pokud ještě neexistují.
-
+```
 ---
 
 ## Spuštění programu
@@ -124,5 +125,6 @@ Aplikace umožňuje:
 
 ## Autor
 
-Klára Chvalinová
+Klára Chvalinová  
+
 Projekt byl vytvořen jako studijní projekt akademie Tester s Pythonem.
