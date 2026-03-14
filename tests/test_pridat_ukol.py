@@ -17,7 +17,7 @@ def test_pridat_ukol_pozitivni(conn, monkeypatch):
     assert row[2] == "nezahájeno"
 
 def test_pridat_ukol_negativni(conn, monkeypatch, capsys):
-    inputs = iter(["", "", "OK_nazev_ukolu", "OK_popis_ukolu"])
+    inputs = iter(["", "OK_nazev_ukolu", "OK_popis_ukolu"])
     monkeypatch.setattr("builtins.input", lambda _: next(inputs))
 
     tm.pridat_ukol(conn)
@@ -29,5 +29,5 @@ def test_pridat_ukol_negativni(conn, monkeypatch, capsys):
     count = cursor.fetchone()[0]
     cursor.close()
 
-    assert "Musí být zadaný název i popis úkolu" in out
+    assert "nesmí být prázdný" in out
     assert count == 1
